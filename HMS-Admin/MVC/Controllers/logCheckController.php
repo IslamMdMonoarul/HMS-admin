@@ -1,0 +1,16 @@
+<?php
+session_start();
+require_once('../Models/alldb.php');
+$id=$_POST['id'];
+$pass=$_POST['pass'];
+$res=auth($id,$pass);
+if($res)
+{
+	$_SESSION['id']=$id;
+   header("location:../Views/adash.php");
+}
+else
+{
+	header("location:../Views/log.php");
+}
+?>
