@@ -1,0 +1,109 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+.sidebar {
+    background-color: #333;
+    color: #fff;
+    width: 200px;
+    padding: 20px;
+}
+
+.sidebar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.sidebar li {
+    margin-bottom: 10px;
+}
+
+.sidebar a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    padding: 5px 10px;
+}
+
+.sidebar a:hover {
+    background-color: #555;
+}
+
+.content {
+    flex: 1;
+    padding: 20px;
+}
+
+.dashboard {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.stats {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.stat {
+    background-color: #f2f2f2;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    width: 180px;
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.stat h3 {
+    margin: 0;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.stat p {
+    margin: 0;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.stat.admin {
+    background-color: #ff6347;
+}
+
+.stat.doctors {
+    background-color: #32cd32;
+}
+
+.stat.patients {
+    background-color: #1e90ff;
+}
+
+.stat.income {
+    background-color: #40e0d0;
+}
+
+.stat.reports {
+    background-color: #9932cc;
+}
+
+.stat.job-requests {
+    background-color: #808080;
+}
